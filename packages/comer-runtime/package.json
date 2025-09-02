@@ -8,5 +8,9 @@
     "cpy": "11.1.0",
     "taskd": "0.1.11",
     "typescript": "5.5.4"
+  },
+  "dependencies": {
+    "mov": "0.2.1",
+    "tslib": "*"
   }
 }

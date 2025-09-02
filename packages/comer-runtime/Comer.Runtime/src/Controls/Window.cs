@@ -180,7 +180,7 @@ public partial class Window : View {
       return Win.Position.Y;
     }
     set {
-      Win.Position = new PixelPoint(Win.Position.Y, value);
+      Win.Position = new PixelPoint(Win.Position.X, value);
     }
   }
 
