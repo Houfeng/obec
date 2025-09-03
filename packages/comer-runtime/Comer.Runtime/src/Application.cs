@@ -1,6 +1,7 @@
 using Avalonia;
 using Avalonia.Threading;
 using Avalonia.Themes.Simple;
+// using Avalonia.Headless;
 using Microsoft.JavaScript.NodeApi;
 using AC = Avalonia.Controls;
 using Comer.Runtime.Controls;
@@ -29,6 +30,8 @@ public partial class ComerApp {
 
   public static void Init() {
     AppBuilder.Configure<InnerApp>()
+    .UseSkia()
+    // .UseHeadless(new AvaloniaHeadlessPlatformOptions { UseHeadlessDrawing = false })
     .UsePlatformDetect()
     .UseStandardRuntimePlatformSubsystem()
     .With(new AvaloniaNativePlatformOptions { })
@@ -45,6 +48,7 @@ public partial class ComerApp {
         TimeSpan.FromMilliseconds(0)
       );
       Dispatcher.UIThread.MainLoop(token.Token);
+      // Dispatcher.UIThread.RunJobs();
     } catch (Exception ex) {
       Console.WriteLine("[Error]", ex.Message, "::", ex.StackTrace);
     }

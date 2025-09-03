@@ -9,6 +9,12 @@ const { mov, Easing } = require('mov');
 
 ComerApp.init();
 
+const toHex = (n) => {
+  if (n < 0) n = 0;
+  if (n > 255) n = 255;
+  return String(Math.floor(n).toString(16)).padStart(2, '0');
+};
+
 var win = new Window();
 win.background = '#eeeeee';
 win.title = "Demo";
@@ -23,11 +29,24 @@ view.verticalAlign = VerticalAlign.Top;
 view.horizontalAlign = HorizontalAlign.Fill;
 view.onPointerEnter = () => {
   box.value = 'Pointer Enter';
-  view.background = "blue"
+  mov({ r: 0, g: 0, b: 255 })
+    .to({ r: 255, g: 0, b: 0 })
+    .duration(300)
+    .framerate(120)
+    .effect(({ r, g, b }, done) => {
+      // console.log(`#${toHex(r)}${toHex(g)}${toHex(b)}`, { r, g, b });
+      view.background = `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+    });
 };
 view.onPointerLeave = () => {
   box.value = 'Pointer Leave';
-  view.background = "red"
+  mov({ r: 255, g: 0, b: 0 })
+    .to({ r: 0, g: 0, b: 255 })
+    .duration(300)
+    .framerate(120)
+    .effect(({ r, g, b }, done) => {
+      view.background = `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+    });
 };
 stack.appendChild(view);
 
