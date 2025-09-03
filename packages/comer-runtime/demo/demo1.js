@@ -7,6 +7,7 @@ const {
 } = require('../');
 const { mov, Easing } = require('mov');
 
+ComerApp.ttt = 16;
 ComerApp.init();
 
 const toHex = (n) => {
@@ -31,7 +32,7 @@ view.onPointerEnter = () => {
   box.value = 'Pointer Enter';
   mov({ r: 0, g: 0, b: 255 })
     .to({ r: 255, g: 0, b: 0 })
-    .duration(300)
+    .duration(200)
     .framerate(120)
     .effect(({ r, g, b }, done) => {
       // console.log(`#${toHex(r)}${toHex(g)}${toHex(b)}`, { r, g, b });
@@ -42,7 +43,7 @@ view.onPointerLeave = () => {
   box.value = 'Pointer Leave';
   mov({ r: 255, g: 0, b: 0 })
     .to({ r: 0, g: 0, b: 255 })
-    .duration(300)
+    .duration(200)
     .framerate(120)
     .effect(({ r, g, b }, done) => {
       view.background = `#${toHex(r)}${toHex(g)}${toHex(b)}`;

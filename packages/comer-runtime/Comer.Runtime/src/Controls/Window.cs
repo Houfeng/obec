@@ -166,6 +166,7 @@ public partial class Window : View {
     }
   }
 
+  [JSExport("x")]
   public int X {
     get {
       return Win.Position.X;
@@ -175,6 +176,7 @@ public partial class Window : View {
     }
   }
 
+  [JSExport("y")]
   public int Y {
     get {
       return Win.Position.Y;

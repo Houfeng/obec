@@ -35,8 +35,8 @@
             Version="11.3.4" />
         <PackageReference Include="Avalonia.Headless" Version="11.3.4" />
         <PackageReference Include="Microsoft.JavaScript.NodeApi"
-            Version="0.8.6" />
+            Version="0.9.15" />
         <PackageReference Include="Microsoft.JavaScript.NodeApi.Generator"
-            Version="0.8.6" />
+            Version="0.9.15" />
     </ItemGroup>
 </Project>

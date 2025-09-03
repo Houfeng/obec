@@ -29,10 +29,7 @@ export class Animate extends EC<SVGAnimateElement, SVGElementEventMap> {
  * @class
  * @sealed
  */
-export class AnimateMotion extends EC<
-  SVGAnimateMotionElement,
-  SVGElementEventMap
-> {
+export class AnimateMotion extends EC<SVGAnimateMotionElement, SVGElementEventMap> {
   static readonly type = "SVG:animateMotion";
 }
 
@@ -43,10 +40,7 @@ export class AnimateMotion extends EC<
  * @class
  * @sealed
  */
-export class AnimateTransform extends EC<
-  SVGAnimateTransformElement,
-  SVGElementEventMap
-> {
+export class AnimateTransform extends EC<SVGAnimateTransformElement, SVGElementEventMap> {
   static readonly type = "SVG:animateTransform";
 }
 
@@ -123,10 +117,7 @@ export class FEBlend extends EC<SVGFEBlendElement, SVGElementEventMap> {
  * @class
  * @sealed
  */
-export class FEColorMatrix extends EC<
-  SVGFEColorMatrixElement,
-  SVGElementEventMap
-> {
+export class FEColorMatrix extends EC<SVGFEColorMatrixElement, SVGElementEventMap> {
   static readonly type = "SVG:feColorMatrix";
 }
 
@@ -137,10 +128,7 @@ export class FEColorMatrix extends EC<
  * @class
  * @sealed
  */
-export class FEComponentTransfer extends EC<
-  SVGFEComponentTransferElement,
-  SVGElementEventMap
-> {
+export class FEComponentTransfer extends EC<SVGFEComponentTransferElement, SVGElementEventMap> {
   static readonly type = "SVG:feComponentTransfer";
 }
 
@@ -162,10 +150,7 @@ export class FEComposite extends EC<SVGFECompositeElement, SVGElementEventMap> {
  * @class
  * @sealed
  */
-export class FEConvolveMatrix extends EC<
-  SVGFEConvolveMatrixElement,
-  SVGElementEventMap
-> {
+export class FEConvolveMatrix extends EC<SVGFEConvolveMatrixElement, SVGElementEventMap> {
   static readonly type = "SVG:feConvolveMatrix";
 }
 
@@ -176,10 +161,7 @@ export class FEConvolveMatrix extends EC<
  * @class
  * @sealed
  */
-export class FEDiffuseLighting extends EC<
-  SVGFEDiffuseLightingElement,
-  SVGElementEventMap
-> {
+export class FEDiffuseLighting extends EC<SVGFEDiffuseLightingElement, SVGElementEventMap> {
   static readonly type = "SVG:feDiffuseLighting";
 }
 
@@ -190,10 +172,7 @@ export class FEDiffuseLighting extends EC<
  * @class
  * @sealed
  */
-export class FEDisplacementMap extends EC<
-  SVGFEDisplacementMapElement,
-  SVGElementEventMap
-> {
+export class FEDisplacementMap extends EC<SVGFEDisplacementMapElement, SVGElementEventMap> {
   static readonly type = "SVG:feDisplacementMap";
 }
 
@@ -204,10 +183,7 @@ export class FEDisplacementMap extends EC<
  * @class
  * @sealed
  */
-export class FEDistantLight extends EC<
-  SVGFEDistantLightElement,
-  SVGElementEventMap
-> {
+export class FEDistantLight extends EC<SVGFEDistantLightElement, SVGElementEventMap> {
   static readonly type = "SVG:feDistantLight";
 }
 
@@ -218,10 +194,7 @@ export class FEDistantLight extends EC<
  * @class
  * @sealed
  */
-export class FEDropShadow extends EC<
-  SVGFEDropShadowElement,
-  SVGElementEventMap
-> {
+export class FEDropShadow extends EC<SVGFEDropShadowElement, SVGElementEventMap> {
   static readonly type = "SVG:feDropShadow";
 }
 
@@ -287,10 +260,7 @@ export class FEFuncR extends EC<SVGFEFuncRElement, SVGElementEventMap> {
  * @class
  * @sealed
  */
-export class FEGaussianBlur extends EC<
-  SVGFEGaussianBlurElement,
-  SVGElementEventMap
-> {
+export class FEGaussianBlur extends EC<SVGFEGaussianBlurElement, SVGElementEventMap> {
   static readonly type = "SVG:feGaussianBlur";
 }
 
@@ -334,10 +304,7 @@ export class FEMergeNode extends EC<SVGFEMergeNodeElement, SVGElementEventMap> {
  * @class
  * @sealed
  */
-export class FEMorphology extends EC<
-  SVGFEMorphologyElement,
-  SVGElementEventMap
-> {
+export class FEMorphology extends EC<SVGFEMorphologyElement, SVGElementEventMap> {
   static readonly type = "SVG:feMorphology";
 }
 
@@ -359,10 +326,7 @@ export class FEOffset extends EC<SVGFEOffsetElement, SVGElementEventMap> {
  * @class
  * @sealed
  */
-export class FEPointLight extends EC<
-  SVGFEPointLightElement,
-  SVGElementEventMap
-> {
+export class FEPointLight extends EC<SVGFEPointLightElement, SVGElementEventMap> {
   static readonly type = "SVG:fePointLight";
 }
 
@@ -373,10 +337,7 @@ export class FEPointLight extends EC<
  * @class
  * @sealed
  */
-export class FESpecularLighting extends EC<
-  SVGFESpecularLightingElement,
-  SVGElementEventMap
-> {
+export class FESpecularLighting extends EC<SVGFESpecularLightingElement, SVGElementEventMap> {
   static readonly type = "SVG:feSpecularLighting";
 }
 
@@ -409,10 +370,7 @@ export class FETile extends EC<SVGFETileElement, SVGElementEventMap> {
  * @class
  * @sealed
  */
-export class FETurbulence extends EC<
-  SVGFETurbulenceElement,
-  SVGElementEventMap
-> {
+export class FETurbulence extends EC<SVGFETurbulenceElement, SVGElementEventMap> {
   static readonly type = "SVG:feTurbulence";
 }
 
@@ -434,10 +392,7 @@ export class Filter extends EC<SVGFilterElement, SVGElementEventMap> {
  * @class
  * @sealed
  */
-export class ForeignObject extends EC<
-  SVGForeignObjectElement,
-  SVGElementEventMap
-> {
+export class ForeignObject extends EC<SVGForeignObjectElement, SVGElementEventMap> {
   static readonly type = "SVG:foreignObject";
 }
 
@@ -481,10 +436,7 @@ export class Line extends EC<SVGLineElement, SVGElementEventMap> {
  * @class
  * @sealed
  */
-export class LinearGradient extends EC<
-  SVGLinearGradientElement,
-  SVGElementEventMap
-> {
+export class LinearGradient extends EC<SVGLinearGradientElement, SVGElementEventMap> {
   static readonly type = "SVG:linearGradient";
 }
 
@@ -583,10 +535,7 @@ export class Polyline extends EC<SVGPolylineElement, SVGElementEventMap> {
  * @class
  * @sealed
  */
-export class RadialGradient extends EC<
-  SVGRadialGradientElement,
-  SVGElementEventMap
-> {
+export class RadialGradient extends EC<SVGRadialGradientElement, SVGElementEventMap> {
   static readonly type = "SVG:radialGradient";
 }
 

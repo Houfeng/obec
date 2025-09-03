@@ -7,5 +7,6 @@ process.chdir(resolve(__dirname, "../binary"));
 
 ComerApp.run = () => {
   ComerApp.tick();
-  setImmediate(ComerApp.run);
+  //@ts-ignore
+  setTimeout(ComerApp.run, ComerApp.ttt);
 };
